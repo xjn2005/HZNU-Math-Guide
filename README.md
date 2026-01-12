@@ -1,5 +1,10 @@
 # 数院自学指南
 
+![College](https://img.shields.io/badge/%E5%AD%A6%E9%99%A2-%E6%95%B0%E5%AD%A6%E5%AD%A6%E9%99%A2-2196F3.svg?style=flat)
+[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Stars](https://img.shields.io/github/stars/xjn2005/HZNU-Math-Guide?style=flat&color=white&label=Stars&logo=Github)](https://github.com/xjn2005/HZNU-Math-Guide/stargazers)
+[![Views](https://visitor-badge.laobi.icu/badge?page_id=xjn2005.HZNU-Math-Guide&left_color=gray&right_color=red&style=flat)](https://github.com/xjn2005/HZNU-Math-Guide)
+
 > 这份资料是我在闲暇之余所写，原本用于竞赛帮助同学快速入门。现在决定开放给所有人，其中包含了我之前学习所得到的数据分析知识和一些经验之谈。因此这里面的内容必然带有我强烈的个人风格和喜好倾向，所以仅供参考。  
 > 编写这份资料的原因有很多：  
 > 第一、国内外众多高校都有自发组织的编写知识库（Wiki）的习惯，我本来是打算用 Github 托管一个 Wiki 的网页，考虑到同学不是计算机专业的学生，因此决定采用国内的软件来构建。
@@ -26,5 +31,10 @@
 [CC-BY-NC-SA：署名-非商业性使用-相同方式共享](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)
 > 文档仅供参考，请自己判断其适用性。
 
-其他部分的版权归属于其各自的作者。
+其他部分的版权归属于其各自的作者。  
+
+--- 
+更完整的内容请看：[数院自学指南](https://wcn0u254fsxg.feishu.cn/wiki/V2ijw3cSXicILjkJWjKcqKCHnec)  
+等到数院的学生都能熟练掌握 Git 之后,会考虑使用 VitePress 构建网站，托管在Github上。
+
 
