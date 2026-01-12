@@ -2,7 +2,7 @@
 
 ![College](https://img.shields.io/badge/%E5%AD%A6%E9%99%A2-%E6%95%B0%E5%AD%A6%E5%AD%A6%E9%99%A2-2196F3.svg?style=flat)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Stars](https://img.shields.io/github/stars/xjn2005/HZNU-Math-Guide?style=flat&color=white&label=Stars&logo=Github)](https://github.com/xjn2005/HZNU-Math-Guide/stargazers)
+[![Stars](https://img.shields.io/github/stars/xjn2005/HZNU-Math-Guide.svg?label=Stars&style=social)](https://github.com/xjn2005/HZNU-Math-Guide/stargazers)
 [![Views](https://visitor-badge.laobi.icu/badge?page_id=xjn2005.HZNU-Math-Guide&left_color=gray&right_color=red&style=flat)](https://github.com/xjn2005/HZNU-Math-Guide)
 
 > 这份资料是我在闲暇之余所写，原本用于竞赛帮助同学快速入门。现在决定开放给所有人，其中包含了我之前学习所得到的数据分析知识和一些经验之谈。因此这里面的内容必然带有我强烈的个人风格和喜好倾向，所以仅供参考。  
