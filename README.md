@@ -23,7 +23,7 @@
 ## ⛳️  知识空间简介
 我浏览了国内外的社区和论坛，希望这份文档中能够包含数学学院所学的内容以及相关性较高的学科知识。理想的最终形态应该包含数学、统计学、数据科学、计算机科学以及软件工程的内容。
 ## ⭐️  常用文档和链接
-通用内容，我会放在 学习帮助 里面。各自课程的文档和链接我会放在相应的文档里面。
+通用内容，我会放在 [学习帮助](https://wcn0u254fsxg.feishu.cn/wiki/NCJGwksvoituNFk0hQ3cPE9YnfV) 里面。各自课程的文档和链接我会放在相应的文档里面。
 ## 💡  知识空间帮助
 我很欢迎同学对我写的内容进行补充，想要参与协作编写的同学，请看：[书写格式和风格](https://wcn0u254fsxg.feishu.cn/wiki/M5xMwOXXSiiLCtkrojgci4o3npc)。有什么问题均可以找我讨论和询问，我的邮箱是：2024210214023@stu.hznu.edu.cn，但是在提问之前建议参考 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)。而且希望文件的格式是 md，如果你的代码块能通过 [carbon](https://carbon.now.sh/?bg=rgba%28171%2C184%2C195%2C100%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=48px&ph=32px&ln=false&fl=1&fm=Hack&fs=13px&lh=133%25&si=false&es=2x&wm=false&code=) 美化就更好了😁
 ## 📑 许可
