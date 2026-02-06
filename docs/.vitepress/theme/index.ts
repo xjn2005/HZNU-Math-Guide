@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import { h, onMounted, watch } from 'vue'
+import { h, onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
 
 export default {
@@ -10,17 +10,31 @@ export default {
     onMounted(() => {
       // 首页不显示评论
       if (route.path !== '/') {
-        loadGiscus()
+        nextTick(() => {
+          loadGiscus()
+        })
       }
     })
     
     // 监听路由变化
     watch(() => route.path, (newPath) => {
+      // 清除旧的评论区
+      const oldContainer = document.querySelector('.giscus-container')
+      if (oldContainer) {
+        oldContainer.remove()
+      }
+      
+      // 清除旧的脚本
+      const oldScript = document.querySelector('script[src*="giscus.app/client.js"]')
+      if (oldScript) {
+        oldScript.remove()
+      }
+      
+      // 新页面加载评论
       if (newPath !== '/') {
-        // 延迟加载，确保DOM已经更新
-        setTimeout(() => {
+        nextTick(() => {
           loadGiscus()
-        }, 100)
+        })
       }
     })
     
@@ -30,11 +44,6 @@ export default {
 
 // 加载giscus脚本
 function loadGiscus() {
-  // 检查是否已经加载了giscus脚本
-  if (document.querySelector('script[src*="giscus.app/client.js"]')) {
-    return
-  }
-  
   // 创建样式
   const style = document.createElement('style')
   style.textContent = `
@@ -42,21 +51,38 @@ function loadGiscus() {
       max-width: 740px;
       margin: 0 auto;
       padding: 0 1.5rem;
+      margin-top: 2rem;
     }
     .giscus-frame {
       width: 100% !important;
     }
+    .VPContent .content {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
   `
-  document.head.appendChild(style)
+  
+  // 检查是否已有样式，如有则更新，无则添加
+  const existingStyle = document.querySelector('style[data-giscus-style]')
+  if (existingStyle) {
+    existingStyle.textContent = style.textContent
+  } else {
+    style.setAttribute('data-giscus-style', 'true')
+    document.head.appendChild(style)
+  }
   
   // 创建giscus容器
   const container = document.createElement('div')
   container.className = 'giscus-container'
   
-  // 查找合适的位置插入容器（在文章内容下方）
-  const contentContainer = document.querySelector('.VPContent') || document.querySelector('.content')
-  if (contentContainer) {
-    contentContainer.appendChild(container)
+  // 查找合适的位置插入容器（在文章内容下方，靠近文章末尾）
+  const articleContainer = document.querySelector('.VPContent .content') || 
+                         document.querySelector('.content') || 
+                         document.querySelector('.VPContent')
+  
+  if (articleContainer) {
+    articleContainer.appendChild(container)
   } else {
     // 如果找不到容器，就添加到body末尾
     document.body.appendChild(container)
