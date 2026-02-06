@@ -1,0 +1,25 @@
+/* 让 Giscus 评论区宽度匹配 VitePress 文章内容区宽度 */
+.giscus-container {
+  width: 100% !important;
+  max-width: 740px;                  /* ← 如果你的文章内容是默认 740px，就用这个；如果更宽，改成 900px 或 1000px 测试 */
+  margin: 2rem auto 3rem;            /* 上下间距大一点，美观 + 呼吸感 */
+  padding: 0 1.5rem;                 /* 左右 padding，跟文章对齐 */
+  box-sizing: border-box;
+}
+
+/* 强制 Giscus iframe 撑满自己的容器 */
+.giscus-container iframe.giscus-frame {
+  width: 100% !important;
+  border: none !important;
+  min-height: 400px;                 /* 初始高度，避免加载时塌陷，可根据平均评论量调 */
+}
+
+/* 可选：暗黑模式下背景更融洽（你的站点是暗黑主题） */
+.dark .giscus-container {
+  background: transparent !important;
+}
+
+/* 如果你想让评论区和文章正文完全对齐，可以用 VitePress 的变量（推荐） */
+.giscus-container {
+  max-width: var(--vp-content-max-width, 740px);  /* VitePress 默认内容 max-width ≈740px，用变量更安全 */
+}
