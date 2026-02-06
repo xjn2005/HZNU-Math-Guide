@@ -8,7 +8,10 @@
     "serve": "vitepress serve"
   },
   "devDependencies": {
-    "vue": "^3.3.4",
-    "vitepress": "^1.6.4"
+    "vitepress": "^1.6.4",
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "vitepress-plugin-comment-with-giscus": "^1.1.15"
   }
 }
