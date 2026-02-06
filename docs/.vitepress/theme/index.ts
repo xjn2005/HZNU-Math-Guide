@@ -78,11 +78,25 @@ function loadGiscus() {
   container.className = 'giscus-container'
   
   // 查找合适的位置插入容器（在文章内容下方，靠近文章末尾）
-  const articleContainer = document.querySelector('.VPContent .content') || 
-                         document.querySelector('.content') || 
-                         document.querySelector('.VPContent')
+  // 优先选择中间内容区域的容器
+  const articleContainer = document.querySelector('.VPSidebar + .VPContent') || 
+                         document.querySelector('.VPContent') || 
+                         document.querySelector('main') || 
+                         document.querySelector('article')
   
   if (articleContainer) {
+    // 确保容器有正确的样式
+    (articleContainer as HTMLElement).style.maxWidth = '740px';
+
+    (articleContainer as HTMLElement).style.margin = '0 auto';
+(articleContainer as HTMLElement).style.padding = '0 1.5rem'
+    
+    // 检查是否已有评论区，避免重复添加
+    const existingComments = articleContainer.querySelector('.giscus-container')
+    if (existingComments) {
+      existingComments.remove()
+    }
+    
     articleContainer.appendChild(container)
   } else {
     // 如果找不到容器，就添加到body末尾
