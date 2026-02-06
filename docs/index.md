@@ -1,5 +1,6 @@
 ---
 layout: home
+giscus: false
 
 hero:
   name: "HZNU Math Guide"
