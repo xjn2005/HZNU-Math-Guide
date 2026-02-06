@@ -1,0 +1,58 @@
+import DefaultTheme from 'vitepress/theme'
+import { h, onMounted, watch } from 'vue'
+import { useRoute } from 'vitepress'
+
+export default {
+  extends: DefaultTheme,
+  Layout() {
+    const route = useRoute()
+    
+    onMounted(() => {
+      // 首页不显示评论
+      if (route.path !== '/') {
+        loadGiscus()
+      }
+    })
+    
+    // 监听路由变化
+    watch(() => route.path, (newPath) => {
+      if (newPath !== '/') {
+        // 延迟加载，确保DOM已经更新
+        setTimeout(() => {
+          loadGiscus()
+        }, 100)
+      }
+    })
+    
+    return h(DefaultTheme.Layout)
+  }
+}
+
+// 加载giscus脚本
+function loadGiscus() {
+  // 检查是否已经加载了giscus脚本
+  if (document.querySelector('script[src*="giscus.app/client.js"]')) {
+    return
+  }
+  
+  // 创建giscus脚本标签
+  const script = document.createElement('script')
+  script.src = 'https://giscus.app/client.js'
+  script.setAttribute('data-repo', 'xjn2005/HZNU-Math-Guide')
+  script.setAttribute('data-repo-id', 'R_kgDOQ4L4yg')
+  script.setAttribute('data-category', 'General')
+  script.setAttribute('data-category-id', 'DIC_kwDOQ4L4ys4C19GI')
+  script.setAttribute('data-mapping', 'pathname')
+  script.setAttribute('data-strict', '1')
+  script.setAttribute('data-reactions-enabled', '1')
+  script.setAttribute('data-emit-metadata', '0')
+  script.setAttribute('data-input-position', 'top')
+  script.setAttribute('data-theme', 'preferred_color_scheme')
+  script.setAttribute('data-lang', 'zh-CN')
+  script.setAttribute('data-loading', 'lazy')
+  script.setAttribute('crossorigin', 'anonymous')
+  script.setAttribute('async', '')
+  
+  // 添加到body末尾
+  document.body.appendChild(script)
+}
