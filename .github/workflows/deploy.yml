@@ -60,11 +60,15 @@ jobs:
 
       - name: Install dependencies
 
-        run: npm ci       # 如果用 pnpm → pnpm install
+        run: npm ci
+
+        working-directory: ./docs
 
       - name: Build with VitePress
 
-        run: npm run docs:build   # 确保 package.json 有 "docs:build": "vitepress build docs"
+        run: npm run build
+
+        working-directory: ./docs
 
       - name: Upload artifact
 
