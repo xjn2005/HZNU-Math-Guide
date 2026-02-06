@@ -112,6 +112,7 @@ export default defineConfig({
 
     outline: { label: '本页目录', level: [1, 6] },
     docFooter: { prev: '上一篇', next: '下一篇' },
-    search: { provider: 'local' }
+    search: { provider: 'local' },
+    
   }
 })
