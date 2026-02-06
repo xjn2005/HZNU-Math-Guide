@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import { h, onMounted, watch, nextTick } from 'vue'
 import { useRoute } from 'vitepress'
+import './custom-giscus.css'
 
 export default {
   extends: DefaultTheme,
