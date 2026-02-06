@@ -5,7 +5,9 @@
 [![Views](https://visitor-badge.laobi.icu/badge?page_id=xjn2005.HZNU-Math-Guide&left_color=gray&right_color=red&style=flat)](https://github.com/xjn2005/HZNU-Math-Guide)
 
 ## 项目网站
-
+<p align="left">
+  <a href="https://xjn2005.github.io/HZNU-Math-Guide/">→ 在线阅读最新版 ←</a>
+</p>
 
 ## 如何贡献
 
