@@ -35,6 +35,33 @@ function loadGiscus() {
     return
   }
   
+  // 创建样式
+  const style = document.createElement('style')
+  style.textContent = `
+    .giscus-container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .giscus-frame {
+      width: 100% !important;
+    }
+  `
+  document.head.appendChild(style)
+  
+  // 创建giscus容器
+  const container = document.createElement('div')
+  container.className = 'giscus-container'
+  
+  // 查找合适的位置插入容器（在文章内容下方）
+  const contentContainer = document.querySelector('.VPContent') || document.querySelector('.content')
+  if (contentContainer) {
+    contentContainer.appendChild(container)
+  } else {
+    // 如果找不到容器，就添加到body末尾
+    document.body.appendChild(container)
+  }
+  
   // 创建giscus脚本标签
   const script = document.createElement('script')
   script.src = 'https://giscus.app/client.js'
@@ -53,6 +80,6 @@ function loadGiscus() {
   script.setAttribute('crossorigin', 'anonymous')
   script.setAttribute('async', '')
   
-  // 添加到body末尾
-  document.body.appendChild(script)
+  // 添加到容器中
+  container.appendChild(script)
 }
