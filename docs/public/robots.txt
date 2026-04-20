@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xjn2005.github.io/HZNU-Math-Guide/sitemap.xml
