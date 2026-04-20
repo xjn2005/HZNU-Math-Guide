@@ -6,5 +6,5 @@
 
 ## 推荐资源
 
-1. [Learncpp](https://hanxiaomax.github.io/Learncpp_CN/) Learncpp 的汉化教程，这是C++入门最好的资料了。
+1. [Learncpp](https://hanxiaomax.github.io/Learncpp_CN/) 是 Learncpp 的汉化教程，这是很好的 C++ 入门资料。
 2. [黑马程序员C++教程](https://github.com/Blitzer207/C-Resource)

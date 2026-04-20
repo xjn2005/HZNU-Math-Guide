@@ -9,4 +9,4 @@
 
 1. [C 语言](https://www.zhihu.com/column/c_1931363093381907125) 徐嘉宁的专栏。
 2. [CS50 - 资源总目录](https://uufyjevghz.feishu.cn/docx/DP78d2U5TosTOTx9QCbcjp8GnBh)
-3. [CS50:Introduction to CS50x and answers to some Problem Set.](https://github.com/xjn2005/CS50) 徐嘉宁完成的内容放在了这个 repo 里面。
+3. [CS50: Introduction to CS50x and answers to some Problem Set.](https://github.com/xjn2005/CS50) 徐嘉宁完成的内容放在这个 GitHub 仓库里。

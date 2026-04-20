@@ -1,4 +1,4 @@
-# Matplotlib    
+# Matplotlib
 
 
 ## 推荐资源

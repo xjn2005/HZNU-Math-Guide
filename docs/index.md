@@ -1,6 +1,6 @@
 ---
 layout: home
-giscus: false
+comment: false
 
 hero:
   name: "HZNU Math Guide"
@@ -25,30 +25,21 @@ features:
   - title: 🕊️ 开源精神
     details: 承袭开源理念，致敬无私共享的教授们。文档基于 CC-BY-NC-SA 协议。
 ---
-
----  
-
-
-> > **本站旨在建立一个属于杭州师范大学数学学院（及所有同好者）的知识空间，让知识在开放与流动中发挥最大的价值。**
-
-
-
+> **本站旨在建立一个属于杭州师范大学数学学院（及所有同好者）的知识空间，让知识在开放与流动中发挥最大的价值。**
 ## 🤝 参与建设
 
 > "在这里，我们只关注两件事：知识是否触及本质且足够先进，以及你的价值观是否与我们契合。"
 
-* **高效提问**：请参考 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md) 和 [不要用愚蠢的方式问问题](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)，学会如何高效获取答案。
-* **参与贡献**：我们急需优质课程推荐、学习笔记、教程或博客分享。请查阅 [书写格式与风格](/书写格式与风格)。
-* **[学术诚信](https://integrity.mit.edu/)**： 文档仅供参考，我确实无法阻止你直接**抄袭**贡献者的资料来完成课业相关内容，但请大家**​爱惜自己的羽翼！​**
-* [📧 联系/讨论](mailto:2024210214023@stu.hznu.edu.cn)：有任何谬误均可直接通过邮件与我联系，也可以在 issue 中讨论。
+- **高效提问**：请参考 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md) 和 [不要用愚蠢的方式问问题](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)，学会如何高效获取答案。
+- **参与贡献**：我们急需优质课程推荐、学习笔记、教程或博客分享。请查阅 [书写格式与风格](/书写格式与风格)。
+- **[学术诚信](https://integrity.mit.edu/)**：文档仅供参考。我无法阻止你直接**抄袭**贡献者的资料来完成课业相关内容，但请大家**爱惜自己的羽翼。**
+- [📧 联系/讨论](mailto:2024210214023@stu.hznu.edu.cn)：有任何谬误都可以直接通过邮件与我联系，也可以在 GitHub Issue 中讨论。
 
 ## 🎬 课余生活
 
 > "我们读诗、写诗，非为追求高雅。我们读诗、写诗，因为我们是人类的一员。" —— 《死亡诗社》
 
-[🍿 我的推荐片单](https://www.douban.com/doulist/162940959/)  
-
-
+[🍿 我的推荐片单](https://www.douban.com/doulist/162940959/)
 ---
 
 <p align="center">

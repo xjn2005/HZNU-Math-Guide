@@ -106,7 +106,6 @@ export default defineConfig({
       { text: 'AI', link: '/AI' },
       { text: '前端开发', link: '/前端开发' },
       { text: '计算机图形学', link: '/计算机图形学' },
-      { text: '区块链', link: '/区块链' },
       { text: '后记', link: '/后记' }
     ],
 
