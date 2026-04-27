@@ -1,6 +1,7 @@
 # HZNU Math Guide
 
 ![College](https://img.shields.io/badge/%E5%AD%A6%E9%99%A2-%E6%95%B0%E5%AD%A6%E5%AD%A6%E9%99%A2-2196F3.svg?style=flat)
+[![CI](https://github.com/xjn2005/HZNU-Math-Guide/actions/workflows/ci.yml/badge.svg)](https://github.com/xjn2005/HZNU-Math-Guide/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=flat)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Stars](https://img.shields.io/github/stars/xjn2005/HZNU-Math-Guide.svg?label=Stars&style=social)](https://github.com/xjn2005/HZNU-Math-Guide/stargazers)
 [![Views](https://visitor-badge.laobi.icu/badge?page_id=xjn2005.HZNU-Math-Guide&left_color=gray&right_color=red&style=flat)](https://github.com/xjn2005/HZNU-Math-Guide)
