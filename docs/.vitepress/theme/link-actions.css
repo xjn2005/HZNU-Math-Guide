@@ -1,0 +1,40 @@
+.vp-doc .external-link-copy {
+  margin-left: 0.2rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--vp-c-text-3);
+  font-size: 0.78rem;
+  line-height: 1;
+  cursor: pointer;
+  vertical-align: middle;
+  opacity: 0;
+  transition:
+    opacity 0.18s ease,
+    color 0.2s ease,
+    transform 0.18s ease;
+}
+
+.vp-doc a[href^='http']:hover + .external-link-copy,
+.vp-doc a[href^='http']:focus-visible + .external-link-copy,
+.vp-doc .external-link-copy:hover,
+.vp-doc .external-link-copy:focus-visible {
+  opacity: 1;
+}
+
+.vp-doc .external-link-copy:hover {
+  color: var(--vp-c-brand-1);
+  transform: translateY(-1px);
+}
+
+.vp-doc .external-link-copy:focus-visible {
+  outline: 1px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (hover: none) {
+  .vp-doc .external-link-copy {
+    opacity: 0.45;
+  }
+}

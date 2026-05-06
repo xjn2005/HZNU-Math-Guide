@@ -39,7 +39,6 @@ jobs:
 
   external-links:
     name: External Link Check
-    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
 
     steps:

@@ -1,5 +1,6 @@
 import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
+import { execFileSync } from 'node:child_process'
 
 const SITE_URL = 'https://xjn2005.github.io/HZNU-Math-Guide'
 const docsRoot = path.resolve('..', 'docs')
@@ -56,6 +57,15 @@ function getLastmod(filePath) {
   const match = content.match(/^lastUpdated:\s*([0-9-]+)$/m)
   if (match) {
     return match[1]
+  }
+
+  try {
+    return execFileSync('git', ['log', '-1', '--format=%cs', '--', filePath], {
+      cwd: docsRoot,
+      encoding: 'utf8'
+    }).trim()
+  } catch {
+    // Fall back to filesystem timestamps when git metadata is unavailable.
   }
 
   const stats = statSync(filePath)

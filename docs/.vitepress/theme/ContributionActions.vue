@@ -1,34 +1,29 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useData, useRoute } from 'vitepress'
+import { useData } from 'vitepress'
 import { REPO_URL } from '../site'
 
-const { frontmatter } = useData()
-const route = useRoute()
+const { frontmatter, page } = useData()
 
 const isHomePage = computed(() => frontmatter.value.layout === 'home')
+const showContributionActions = computed(
+  () => frontmatter.value.showContributionActions !== false
+)
 
-const routePath = computed(() => {
-  const normalized = decodeURIComponent(route.path).replace(/\/$/, '')
-  return normalized || '/'
-})
+const routePath = computed(() => page.value.filePath || page.value.relativePath)
 
 const docPath = computed(() => {
-  if (routePath.value === '/') {
-    return 'docs/index.md'
-  }
-
-  return `docs${routePath.value}.md`
+  return routePath.value ? `docs/${routePath.value}` : 'docs/index.md'
 })
 
-const pageLabel = computed(() => (routePath.value === '/' ? '首页' : routePath.value))
+const pageLabel = computed(() => page.value.title || routePath.value || '首页')
 
 const feedbackLink = computed(() => {
   const params = new URLSearchParams({
     title: `页面反馈：${pageLabel.value}`,
     body: [
       '## 页面信息',
-      `- 页面路径：\`${routePath.value}\``,
+      `- 页面路径：\`${page.value.relativePath || '/'}\``,
       `- 源文件：\`${docPath.value}\``,
       '',
       '## 问题描述',
@@ -46,7 +41,7 @@ const resourceLink = computed(() => {
     title: `资源补充：${pageLabel.value}`,
     body: [
       '## 资源补充',
-      `- 目标页面：\`${routePath.value}\``,
+      `- 目标页面：\`${page.value.relativePath || '/'}\``,
       `- 对应文件：\`${docPath.value}\``,
       '',
       '## 建议补充的资源',
@@ -61,7 +56,7 @@ const resourceLink = computed(() => {
 </script>
 
 <template>
-  <section v-if="!isHomePage" class="contribution-note">
+  <section v-if="!isHomePage && showContributionActions" class="contribution-note">
     <p class="contribution-note__text">
       <a :href="feedbackLink" target="_blank" rel="noreferrer">反馈问题</a>
       <span class="contribution-note__separator">·</span>
