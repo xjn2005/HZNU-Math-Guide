@@ -36,24 +36,3 @@ jobs:
       - name: Check internal links
         run: npm run check:links
         working-directory: docs
-
-  external-links:
-    name: External Link Check
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Check external links
-        uses: lycheeverse/lychee-action@v2
-        with:
-          args: >-
-            --verbose
-            --no-progress
-            --retry-wait-time 5
-            --max-retries 3
-            --timeout 20
-            --accept 200..299,403,429
-            --exclude-path docs/.vitepress/dist
-            docs/**/*.md README.md

@@ -8,7 +8,6 @@ import ContributionActions from './ContributionActions.vue'
 import BackToTop from './BackToTop.vue'
 import CustomNotFound from './CustomNotFound.vue'
 import ImageLightbox from './ImageLightbox.vue'
-import SidebarControls from './SidebarControls.vue'
 import './link-actions.css'
 import './ui-enhancements.css'
 
@@ -94,7 +93,6 @@ const theme: Theme = {
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
       'doc-footer-before': () => h(ContributionActions),
-      'sidebar-nav-before': () => h(SidebarControls),
       'not-found': () => h(CustomNotFound),
       'layout-bottom': () => [h(BackToTop), h(ImageLightbox)]
     })
