@@ -6,68 +6,23 @@
 [![Stars](https://img.shields.io/github/stars/xjn2005/HZNU-Math-Guide.svg?label=Stars&style=social)](https://github.com/xjn2005/HZNU-Math-Guide/stargazers)
 [![Views](https://visitor-badge.laobi.icu/badge?page_id=xjn2005.HZNU-Math-Guide&left_color=gray&right_color=red&style=flat)](https://github.com/xjn2005/HZNU-Math-Guide)
 
-杭州师范大学数学学院自学指南。
+> “If I have seen further, it is by standing on the shoulders of giants.” — Isaac Newton
 
-这个项目尝试做一件很朴素的事：把分散的课程、教材、讲义、笔记、工具链和自学经验，整理成一份适合长期维护、可以持续协作的知识入口。它既面向数学学院的同学，也面向所有希望系统自学数学、计算机和数据科学的人。
+大学教育的意义，并不只是在于传授知识，而在于学会如何学习、如何思考，以及如何在一个充满信息的世界里建立自己的判断。
+
+每一年都会有新的学生进入校园，也会有新的学生离开。许多经验、资料与学习路径因此不断产生，也不断消失。
+
+本项目希望让这些探索不必被一代又一代人重复开始。
+
+通过整理课程、教材、项目、工具与学习经验，我们尝试建立一份能够长期维护的学习指南，使后来者能够从前人的工作出发，而不是重复前人的探索。
+
+内容涵盖数学、计算机科学、数据科学与人工智能等领域。
+
+面向所有认真对待学习的人。
 
 ## 在线阅读
 
-- 网站地址：https://xjn2005.github.io/HZNU-Math-Guide/
-
-## 这份指南包含什么
-
-目前仓库主要包括以下内容：
-
-- 前言、学习帮助、检索技巧、书写格式与风格等导引性页面
-- 数学基础：微积分、高等代数、概率论与数理统计
-- 数学进阶：实变函数、复变函数、常微分方程、偏微分方程、随机过程、时间序列分析、抽象代数、初等数论、密码学
-- 编程入门：C、C++、Python、Java、Rust、Go、JavaScript
-- CS 核心课程：数据结构与算法、计算机网络、操作系统、计算机组成原理、数据库
-- 数据科学：NumPy、Pandas、Matplotlib、机器学习、深度学习
-- 以及 AI、前端开发、计算机图形学等拓展主题
-
-这些内容并不是为了堆砌链接，而是希望逐步沉淀出一套更适合自学、筛选过的学习路径。
-
-## 这份指南适合谁
-
-- 杭州师范大学数学学院的本科生
-- 想从数学转向计算机、数据科学或 AI 的同学
-- 希望分享课程、笔记、教程和经验的贡献者
-
-如果你只想临时找一份作业答案，这个项目并不适合你。它更适合愿意长期积累、愿意阅读原始资料、愿意认真学习的人。
-
-## 如何使用
-
-建议按下面的顺序阅读和使用：
-
-1. 先看 `前言`，了解项目的目标和价值取向。
-2. 再看 `学习帮助` 和 `检索技巧`，建立基本的资料获取和学习方法。
-3. 根据自己的方向进入对应板块，例如数学基础、编程入门、CS 核心课程或数据科学。
-4. 如果准备贡献内容，先阅读 `书写格式与风格`，再提交 Issue 或 Pull Request。
-
-## 如何贡献
-
-欢迎通过 GitHub 参与协作。
-
-你可以贡献的内容包括：
-
-- 优质课程推荐
-- 学习笔记和课程总结
-- 教程、博客和资料索引
-- 链接修复、结构调整和错别字修正
-- 对已有内容的补充、勘误和更新
-
-贡献前建议先阅读：
-
-- [书写格式与风格](https://xjn2005.github.io/HZNU-Math-Guide/%E4%B9%A6%E5%86%99%E6%A0%BC%E5%BC%8F%E4%B8%8E%E9%A3%8E%E6%A0%BC)
-- [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
-- [不要用愚蠢的方式问问题](https://github.com/tangx/Stop-Ask-Questions-The-Stupid-Ways/blob/master/README.md)
-
-协作方式：
-
-1. 提交 Issue，报告错误、失效链接或提出建议
-2. Fork 仓库后提交 Pull Request
-3. 在 PR 中明确说明你改了什么、为什么改、是否影响现有结构
+https://xjn2005.github.io/HZNU-Math-Guide/
 
 ## 本地预览
 
@@ -85,6 +40,13 @@ npm run dev
 npm run build
 npm run serve
 ```
+##贡献
+
+学习不应被理解为一场竞争资源的游戏。
+
+我们相信，知识的价值不在于被占有，而在于被传播。让更多人接触优质资源，本身就是教育的一部分。
+
+欢迎通过 Issue 或 Pull Request 参与项目建设。
 
 ## 联系方式
 
