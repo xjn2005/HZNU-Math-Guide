@@ -40,7 +40,7 @@ npm run dev
 npm run build
 npm run serve
 ```
-##贡献
+## 贡献
 
 学习不应被理解为一场竞争资源的游戏。
 
